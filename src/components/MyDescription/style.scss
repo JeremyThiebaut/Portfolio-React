@@ -1,0 +1,19 @@
+.myDescription {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 75vw;
+  margin: auto;
+  padding: 7rem 0 0;
+
+  &-text {
+    width: 70%;
+    max-width: 40rem;
+    margin-right: 5rem;
+  }
+
+  img {
+    width: 30%;
+    max-width: 20rem;
+  }
+}
