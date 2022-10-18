@@ -1,0 +1,29 @@
+.header {
+  position: fixed;
+  top: 0;
+  background-color: #3f6184;
+  width: 100%;
+  color: #fff;
+  height: 4rem;
+  display: flex;
+
+  &-logo {
+    margin: auto auto auto 10%;
+  }
+
+  &-nav {
+    margin: auto 10% auto auto;
+
+    &-ul {
+      display: flex;
+      justify-content: flex-end;
+      width: 100%;
+      margin-right: 10%;
+      margin-left: auto;
+    }
+
+    &-list {
+      margin-left: 1em;
+    }
+  }
+}
