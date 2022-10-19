@@ -24,6 +24,11 @@
     overflow: hidden;
   }
 
+  &-link {
+    max-width: 50em;
+    margin: 0 auto;
+  }
+
   &-logo {
     width: 100%;
     transition: all 0.2s ease;
