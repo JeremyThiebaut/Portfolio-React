@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #3f6184;
+  color: #fff;
+  font-weight: bold;
+  line-height: 25px;
+  padding: 1em 0;
+
+  &-mention {
+    color: #007bff;
+  }
+}

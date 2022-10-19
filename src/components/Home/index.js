@@ -4,6 +4,7 @@ import Header from "../Header";
 import MyDescription from "../MyDescription";
 import Project from "../Project";
 import MyDocuments from "../MyDocuments";
+import Footer from "../Footer";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <MyDescription />
       <Project />
       <MyDocuments />
+      <Footer />
     </div>
   );
 };
