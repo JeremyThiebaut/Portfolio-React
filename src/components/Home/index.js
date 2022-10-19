@@ -3,6 +3,7 @@ import "./style.scss";
 import Header from "../Header";
 import MyDescription from "../MyDescription";
 import Project from "../Project";
+import MyDocuments from "../MyDocuments";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
       <Header />
       <MyDescription />
       <Project />
+      <MyDocuments />
     </div>
   );
 };
