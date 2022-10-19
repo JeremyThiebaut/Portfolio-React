@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./style.scss";
 import imgProject from "../../img/work1.jpg";
 
@@ -7,9 +8,9 @@ const Project = () => {
     <div className="project">
       <p className="project-title-group">Galeries de mes projets</p>
       <div className="project-all-articles">
-        <a
+        <NavLink
           className="project-link"
-          href="nomduprojet"
+          to="nomduprojet"
           target="_blank"
           aria-label="Voir la page de nomduprojet"
         >
@@ -25,7 +26,7 @@ const Project = () => {
             <span className="project-description">Description du projet</span>
             <span className="project-title-right">Nom du projet</span>
           </div>
-        </a>
+        </NavLink>
       </div>
     </div>
   );
