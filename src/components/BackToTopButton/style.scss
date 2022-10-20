@@ -1,0 +1,14 @@
+.backToTopButton {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 2em;
+  color: #007bff;
+  
+  & i {
+      animation: scrollTop 0.5s alternate ease infinite;
+    
+  }
+}

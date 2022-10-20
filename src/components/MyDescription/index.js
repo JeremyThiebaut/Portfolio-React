@@ -27,7 +27,7 @@ const MyDescription = () => {
           fur et à mesure de mes projets.
         </p>
       </div>
-      <img src={profil} alt="photo de profil" />
+      <img src={profil} alt="présentation du développeur" />
     </div>
   );
 };
