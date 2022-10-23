@@ -1,11 +1,11 @@
 import React from "react";
 import "./style.scss";
-import Header from "../Header";
+import NavBar from "../NavBar";
 
 const NotFound = () => {
   return (
     <div className="notFound">
-      <Header />
+      <NavBar />
       <h2>404</h2>
       <p className="notFound-text">Désolé, cette page n'existe pas</p>
       <img

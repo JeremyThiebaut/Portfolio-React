@@ -1,6 +1,6 @@
 import React from "react";
 import "./style.scss";
-import Header from "../Header";
+import NavBar from "../NavBar";
 import MyDescription from "../MyDescription";
 import Project from "../Project";
 import MyDocuments from "../MyDocuments";
@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div className="home">
       <Slider />
-      <Header />
+      <NavBar />
       <MyDescription />
       <Project />
       <MyDocuments />

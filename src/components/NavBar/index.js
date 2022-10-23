@@ -5,28 +5,33 @@ import "./style.scss";
 
 //
 
-const Header = () => {
+const NavBar = () => {
   return (
-    <div className="header">
-      <p className="header-logo">Logo</p>
-      <nav className="header-nav">
-        <ul className="header-nav-ul">
-          <li className="header-nav-list">
+    <div className="navBar">
+      <p className="navBar-logo">Logo</p>
+      <nav className="navBar-nav">
+        <ul className="navBar-nav-ul">
+          <li className="navBar-nav-list">
             <Link smooth to="/#">
               Accueil
             </Link>
           </li>
-          <li className="header-nav-list">
+          <li className="navBar-nav-list">
             <Link smooth to="/#myDescription">
               Description
             </Link>
           </li>
-          <li className="header-nav-list">
+          <li className="navBar-nav-list">
+            <Link smooth to="/#project">
+              Mes projets
+            </Link>
+          </li>
+          <li className="navBar-nav-list">
             <Link smooth to="/#myDocuments">
               Mes documents
             </Link>
           </li>
-          <li className="header-nav-list">
+          <li className="navBar-nav-list">
             <NavLink to="/contact">Contact</NavLink>
           </li>
         </ul>
@@ -35,4 +40,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default NavBar;

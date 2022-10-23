@@ -5,7 +5,7 @@ import imgProject from "../../img/work1.jpg";
 
 const Project = () => {
   return (
-    <div className="project">
+    <div className="project" id="project">
       <p className="project-title-group">Galeries de mes projets</p>
       <div className="project-all-articles">
         <NavLink
