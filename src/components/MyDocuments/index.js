@@ -6,7 +6,7 @@ import image from "../../pdf/CV-Thiebaut-Jeremy.png";
 
 const MyDocuments = () => {
   return (
-    <div className="myDocuments">
+    <div className="myDocuments" id="myDocuments">
       <h2 className="myDocuments-title">Mes documents</h2>
       <div className="myDocuments-all-pdf">
       <a

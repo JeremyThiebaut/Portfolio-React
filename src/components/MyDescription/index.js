@@ -4,7 +4,7 @@ import profil from "../../img/profil.jpeg";
 
 const MyDescription = () => {
   return (
-    <div className="myDescription">
+    <div className="myDescription" id="myDescription">
       <div className="myDescription-text">
         <p>
           Passionné de la technologie web depuis mon adolescence. Cette passion

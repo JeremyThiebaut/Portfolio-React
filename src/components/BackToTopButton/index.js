@@ -7,7 +7,7 @@ const BackToTopButton = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", () => {
-      if (window.scrollY > 0) {
+      if (window.scrollY > window.innerHeight - 40) {
         setBackToTopButton(true);
       } else {
         setBackToTopButton(false);
@@ -25,7 +25,11 @@ const BackToTopButton = () => {
   return (
     <div className="backToTopButton">
       {backToTopButton && (
-        <i className="fa fa-angle-up backToTopButton-logo" aria-hidden="true" onClick={scrollUp}></i>
+        <i
+          className="fa fa-angle-up backToTopButton-logo"
+          aria-hidden="true"
+          onClick={scrollUp}
+        ></i>
       )}
     </div>
   );

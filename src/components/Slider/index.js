@@ -29,8 +29,10 @@ const Slider = () => {
 
   return (
     <Carousel
+      id="carousel"
       autoPlay
-      interval={3000}
+      interval={5000}
+      transitionTime={1000}
       swipeable={true}
       infiniteLoop
       thumbWidth={120}
@@ -38,6 +40,7 @@ const Slider = () => {
       showArrows={false}
       showStatus={false}
       showThumbs={false}
+      animationHandler={"fade"}
     >
       {datas.map((slide) => (
         <div key={slide.id}>

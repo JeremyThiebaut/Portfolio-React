@@ -1,5 +1,5 @@
 .header {
-  position: fixed;
+  position: sticky;
   top: 0;
   background-color: #3f6184;
   width: 100%;
@@ -7,6 +7,7 @@
   height: 4rem;
   display: flex;
   z-index: 1000;
+  margin-bottom: -4rem;
 
   &-logo {
     margin: auto auto auto 10%;

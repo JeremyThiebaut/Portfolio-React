@@ -8,7 +8,6 @@
   color: #007bff;
   
   & i {
-      animation: scrollTop 0.5s alternate ease infinite;
-    
+      animation: bounce 3s infinite;
   }
 }

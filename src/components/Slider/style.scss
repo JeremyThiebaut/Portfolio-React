@@ -1,6 +1,6 @@
-.carousel {
-  position: relative;
-}
+// .carousel-root {
+//   margin-top: 4rem;
+// }
 
 .overlay {
   width: 80%;
@@ -18,24 +18,14 @@
   }
 }
 
-/* vignette sous le carousel */
-.carousel .thumbs {
-  //   display: none;
-  display: flex;
-  justify-content: center;
-  margin: 0;
-  padding: 10px;
-}
-
-.carousel .thumb {
-  margin: 0 5px;
-  cursor: pointer;
+.carousel .slide img {
+  object-fit: cover;
+  height: 100vh;
 }
 
 @media screen and (max-width: 600px) {
   .carousel .slide img {
     width: 100vw !important;
     height: 40vh;
-    object-fit: cover;
   }
 } ;
