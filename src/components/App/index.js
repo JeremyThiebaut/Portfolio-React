@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import NotFound from "../NotFound";
 import Home from "../Home";
-import Contact from "../Contact";
+import Contact from "../../container/Contact";
 
 // import PropTypes from "prop-types";
 

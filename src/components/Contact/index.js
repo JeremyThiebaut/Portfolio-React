@@ -4,7 +4,9 @@ import backPictures from "../../img/work1.jpg";
 import phone from "../../img/phone.png";
 import enveloppe from "../../img/enveloppe.png";
 
-const Contact = () => {
+import PropTypes from "prop-types";
+
+const Contact = ({ onInputChange, onMessageSend, message }) => {
   return (
     <div className="contact">
       <div className="contact-left">
@@ -48,11 +50,33 @@ const Contact = () => {
       </div>
       <div className="contact-right">
         <div className="contact-right-container">
-          <p>toto</p>
+          <form
+            className="message-form"
+            onSubmit={(evt) => {
+              evt.preventDefault();
+              onMessageSend();
+            }}
+          >
+            <input
+              className="message-form_input"
+              type="text"
+              onChange={(evt) => {
+                onInputChange(evt.target.value);
+              }}
+              value={message}
+              placeholder="Nom"
+            />
+          </form>
         </div>
       </div>
     </div>
   );
+};
+
+Contact.propTypes = {
+  onInputChange: PropTypes.func.isRequired,
+  onMessageSend: PropTypes.func.isRequired,
+  message: PropTypes.string.isRequired,
 };
 
 export default Contact;
