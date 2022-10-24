@@ -1,16 +1,16 @@
 import { connect } from "react-redux";
 import Contact from "../components/Contact";
-import { messageInputChange, messageSend } from "../store/action";
+import { textInputChange, messageSend } from "../store/action";
 
 const mapState = (state) => ({
-  message: state.messageInput,
+  messageInput: state.messageInput,
 });
 
 const mapDispatch = (dispatch) => ({
-  onInputChange: (newMessage) => {
-    dispatch(messageInputChange(newMessage));
+  onInputChange: (changeData) => {
+    dispatch(textInputChange(changeData));
   },
-  onMessageSend: () => {
+  onFormSubmit: () => {
     dispatch(messageSend());
   },
 });

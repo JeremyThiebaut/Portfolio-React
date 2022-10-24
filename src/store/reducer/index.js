@@ -1,22 +1,36 @@
-import { MESSAGE_INPUT_CHANGE, MESSAGE_SEND } from "../action";
+import { TEXT_INPUT_CHANGE, MESSAGE_SEND } from "../action";
 
 const initialState = {
-  messages: [],
-  messageInput: "",
+  messageInput: {
+    firstName: "",
+    lastName: "",
+    mail: "",
+    phone: "",
+    message: "",
+  },
 };
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default (state = initialState, action = {}) => {
   switch (action.type) {
-    case MESSAGE_INPUT_CHANGE:
+    case TEXT_INPUT_CHANGE:
       return {
         ...state,
-        messageInput: action.payload,
+        messageInput: {
+          ...state.messageInput,
+          ...action.payload,
+        },
       };
     case MESSAGE_SEND:
       return {
         ...state,
-        messageInput: "",
+        messageInput: {
+          firstName: "",
+          lastName: "",
+          mail: "",
+          phone: "",
+          message: "",
+        },
       };
     default:
       return state;

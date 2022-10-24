@@ -10,8 +10,6 @@ import NotFound from "../NotFound";
 import Home from "../Home";
 import Contact from "../../container/Contact";
 
-// import PropTypes from "prop-types";
-
 const App = () => {
   return (
     <Router>
@@ -29,16 +27,5 @@ const App = () => {
     </Router>
   );
 };
-
-// Démo
-
-// const ParamsAdress = () => {
-//   const { slug } = useParams();
-//   return <Home slug={slug} />;
-// };
-
-// App.propTypes = {
-
-// }
 
 export default App;
