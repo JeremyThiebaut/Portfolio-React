@@ -5,10 +5,10 @@ import {
   Routes,
   // useParams,
   // Redirect,
-  // Link
 } from "react-router-dom";
 import NotFound from "../NotFound";
 import Home from "../Home";
+import Contact from "../Contact";
 
 // import PropTypes from "prop-types";
 
@@ -22,7 +22,8 @@ const App = () => {
             <Route index element={<Admin />} />
             <Route path=":userId" element={<Page />} />
           </Route> */}
-          <Route exact path="/*" element={<NotFound />} />
+          <Route path="contact" element={<Contact />} />
+          <Route path="/*" element={<NotFound />} />
         </Routes>
       </div>
     </Router>
