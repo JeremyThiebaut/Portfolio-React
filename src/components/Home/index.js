@@ -6,7 +6,7 @@ import Project from "../Project";
 import MyDocuments from "../MyDocuments";
 import Footer from "../Footer";
 import BackToTopButton from "../BackToTopButton";
-import Slider from "../Slider";
+import Slider from "../../container/Slider";
 
 const Home = () => {
   return (

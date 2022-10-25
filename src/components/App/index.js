@@ -9,6 +9,7 @@ import {
 import NotFound from "../NotFound";
 import Home from "../Home";
 import Contact from "../../container/Contact";
+import Mention from "../Mentions";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
             <Route path=":userId" element={<Page />} />
           </Route> */}
           <Route path="contact" element={<Contact />} />
+          <Route path="mention" element={<Mention />} />
           <Route path="/*" element={<NotFound />} />
         </Routes>
       </div>

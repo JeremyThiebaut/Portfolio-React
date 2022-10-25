@@ -1,11 +1,11 @@
 import { configureStore } from "@reduxjs/toolkit";
 import reducer from "./reducer";
-import mailMiddleware from "./middlewares/mailMiddleware";
+import ajaxMiddleware from "./middlewares/ajaxMiddleware";
 
 const store = configureStore({
   reducer,
   middleware: (getDefaultMiddleware) =>
-    getDefaultMiddleware().concat(mailMiddleware),
+    getDefaultMiddleware().concat(ajaxMiddleware),
 });
 
 export default store;
