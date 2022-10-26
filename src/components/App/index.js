@@ -1,3 +1,4 @@
+import React, { useEffect } from "react";
 import "./style.scss";
 import {
   BrowserRouter as Router,
@@ -11,7 +12,12 @@ import Home from "../Home";
 import Contact from "../../container/Contact";
 import Mention from "../Mentions";
 
-const App = () => {
+const App = ({ getAllData }) => {
+  useEffect(() => {
+    getAllData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
   return (
     <Router>
       <div className="app">

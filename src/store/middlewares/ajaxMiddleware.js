@@ -1,20 +1,27 @@
-import { GET_CAROUSEL, getCarouselError, getCarouselSuccess } from "../action";
+import {
+  // GET_PROJECT,
+  // getProjectError,
+  // getProjectSuccess,
+  GET_ALL_DATA,
+  getAllDataError,
+  getAllDataSuccess,
+} from "../action";
 import axios from "axios";
 
 const ajaxMiddleware = (store) => (next) => (action) => {
   next(action);
   switch (action.type) {
-    case GET_CAROUSEL:
+    case GET_ALL_DATA:
       axios({
         method: "get",
-        url: "http://localhost:3000/carousel",
+        url: "http://localhost:3001/allData",
       })
-        .then((res) => {
-          console.log(res.data);
-          store.dispatch(getCarouselSuccess(res.data));
+        .then((response) => {
+          console.log(response.data);
+          store.dispatch(getAllDataSuccess(response.data));
         })
-        .catch((err) => {
-          store.dispatch(getCarouselError(err));
+        .catch((error) => {
+          store.dispatch(getAllDataError(error));
         });
 
       break;

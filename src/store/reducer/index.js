@@ -1,9 +1,15 @@
 import {
   TEXT_INPUT_CHANGE,
   MESSAGE_SEND,
-  GET_CAROUSEL,
-  GET_CAROUSEL_ERROR,
-  GET_CAROUSEL_SUCCESS,
+  GET_ALL_DATA,
+  GET_ALL_DATA_ERROR,
+  GET_ALL_DATA_SUCCESS,
+  // GET_CAROUSEL,
+  // GET_CAROUSEL_ERROR,
+  // GET_CAROUSEL_SUCCESS,
+  // GET_PROJECT,
+  // GET_PROJECT_ERROR,
+  // GET_PROJECT_SUCCESS,
 } from "../action";
 
 const initialState = {
@@ -15,9 +21,11 @@ const initialState = {
     message: "",
   },
 
-  carousel: [],
-  error: "",
   loading: false,
+
+  carousel: [],
+  project: [],
+  dataError: "",
 };
 
 // eslint-disable-next-line import/no-anonymous-default-export
@@ -42,25 +50,58 @@ export default (state = initialState, action = {}) => {
           message: "",
         },
       };
-    case GET_CAROUSEL:
+    case GET_ALL_DATA:
       return {
         ...state,
         loading: true,
       };
-    case GET_CAROUSEL_ERROR:
+    case GET_ALL_DATA_ERROR:
       return {
         ...state,
-        loading: false,
         carousel: [],
-        error: action.payload,
+        project: [],
+        dataError: action.payload,
+        loading: false,
       };
-    case GET_CAROUSEL_SUCCESS:
+    case GET_ALL_DATA_SUCCESS:
       return {
         ...state,
+        ...action.payload,
+        dataError: "",
         loading: false,
-        carousel: [...action.payload],
-        error: "",
       };
+    // case GET_CAROUSEL:
+    //   return {
+    //     ...state,
+    //   };
+    // case GET_CAROUSEL_ERROR:
+    //   return {
+    //     ...state,
+    //     carousel: [],
+    //     carouselError: action.payload,
+    //   };
+    // case GET_CAROUSEL_SUCCESS:
+    //   return {
+    //     ...state,
+    //     carousel: [...action.payload],
+    //     carouselError: "",
+    //   };
+    // case GET_PROJECT:
+    //   return {
+    //     ...state,
+    //   };
+    // case GET_PROJECT_ERROR:
+    //   return {
+    //     ...state,
+    //     project: [],
+    //     projectError: action.payload,
+    //   };
+    // case GET_PROJECT_SUCCESS:
+    //   return {
+    //     ...state,
+    //     project: [...action.payload],
+    //     projectError: "",
+    //   };
     default:
       return state;
   }

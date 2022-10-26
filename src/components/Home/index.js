@@ -2,7 +2,7 @@ import React from "react";
 import "./style.scss";
 import NavBar from "../NavBar";
 import MyDescription from "../MyDescription";
-import Project from "../Project";
+import Project from "../../container/Project";
 import MyDocuments from "../MyDocuments";
 import Footer from "../Footer";
 import BackToTopButton from "../BackToTopButton";
