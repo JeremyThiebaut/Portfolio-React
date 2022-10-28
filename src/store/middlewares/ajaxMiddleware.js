@@ -1,7 +1,4 @@
 import {
-  // GET_PROJECT,
-  // getProjectError,
-  // getProjectSuccess,
   GET_ALL_DATA,
   getAllDataError,
   getAllDataSuccess,

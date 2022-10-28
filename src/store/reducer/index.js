@@ -4,12 +4,6 @@ import {
   GET_ALL_DATA,
   GET_ALL_DATA_ERROR,
   GET_ALL_DATA_SUCCESS,
-  // GET_CAROUSEL,
-  // GET_CAROUSEL_ERROR,
-  // GET_CAROUSEL_SUCCESS,
-  // GET_PROJECT,
-  // GET_PROJECT_ERROR,
-  // GET_PROJECT_SUCCESS,
 } from "../action";
 
 const initialState = {
@@ -25,6 +19,7 @@ const initialState = {
 
   carousel: [],
   project: [],
+  myDescription: [],
   dataError: "",
 };
 
@@ -60,6 +55,7 @@ export default (state = initialState, action = {}) => {
         ...state,
         carousel: [],
         project: [],
+        myDescription: [],
         dataError: action.payload,
         loading: false,
       };
@@ -70,38 +66,6 @@ export default (state = initialState, action = {}) => {
         dataError: "",
         loading: false,
       };
-    // case GET_CAROUSEL:
-    //   return {
-    //     ...state,
-    //   };
-    // case GET_CAROUSEL_ERROR:
-    //   return {
-    //     ...state,
-    //     carousel: [],
-    //     carouselError: action.payload,
-    //   };
-    // case GET_CAROUSEL_SUCCESS:
-    //   return {
-    //     ...state,
-    //     carousel: [...action.payload],
-    //     carouselError: "",
-    //   };
-    // case GET_PROJECT:
-    //   return {
-    //     ...state,
-    //   };
-    // case GET_PROJECT_ERROR:
-    //   return {
-    //     ...state,
-    //     project: [],
-    //     projectError: action.payload,
-    //   };
-    // case GET_PROJECT_SUCCESS:
-    //   return {
-    //     ...state,
-    //     project: [...action.payload],
-    //     projectError: "",
-    //   };
     default:
       return state;
   }
