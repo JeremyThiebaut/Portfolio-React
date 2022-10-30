@@ -7,7 +7,7 @@ const MyDescription = ({ myDescription }) => {
     <div className="myDescription" id="myDescription">
       <div className="myDescription-container">
         {myDescription.map((description) => (
-          <p className="myDescription-text" key={myDescription.id}>{description.text}</p>
+          <p className="myDescription-text" key={description.id}>{description.text}</p>
         ))}
       </div>
       <img src={profil} alt="présentation du développeur" />

@@ -7,7 +7,7 @@ import "./style.scss";
 
 const NavBar = () => {
   return (
-    <div className="navBar">
+    <div className="navBar" id="navBar">
       <p className="navBar-logo">Logo</p>
       <nav className="navBar-nav">
         <ul className="navBar-nav-ul">
